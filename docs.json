@@ -59,22 +59,14 @@
           "pages": [
             "staff/training",
             "staff/emergency-response"
-          ],
-          "auth": {
-            "method": "password",
-            "password": "AHSSTAFF2025"
-          }
+          ]
         },
         {
           "group": "Management Tools", 
           "pages": [
             "staff/admin-tools",
             "staff/events"
-          ],
-          "auth": {
-            "method": "password",
-            "password": "AHSSTAFF2025"
-          }
+          ]
         }
         ]
       }
