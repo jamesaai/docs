@@ -56,21 +56,18 @@
       ]
     }
   ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Discord Server",
-          "href": "https://Discord.gg/firealarm",
-          "icon": "discord"
-        },
-        {
-          "anchor": "Play Game",
-          "href": "https://www.roblox.com/games/firealarmschool",
-          "icon": "gamepad-2"
-        }
-      ]
+  "anchors": [
+    {
+      "name": "Discord Server",
+      "url": "https://Discord.gg/firealarm",
+      "icon": "discord"
+    },
+    {
+      "name": "Play Game", 
+      "url": "https://www.roblox.com/games/firealarmschool",
+      "icon": "gamepad-2"
     }
-  },
+  ],
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
