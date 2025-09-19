@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Fire Alarm School Documentation",
+  "name": "AHS | Documentation",
   "colors": {
     "primary": "#DC2626",
     "light": "#EF4444",
@@ -54,20 +54,28 @@
       {
         "tab": "Staff Resources",
         "groups": [
-          {
-            "group": "Staff Training",
-            "pages": [
-              "staff/training",
-              "staff/emergency-response"
-            ]
-          },
-          {
-            "group": "Management Tools",
-            "pages": [
-              "staff/admin-tools",
-              "staff/events"
-            ]
+        {
+          "group": "Staff Training",
+          "pages": [
+            "staff/training",
+            "staff/emergency-response"
+          ],
+          "auth": {
+            "method": "password",
+            "password": "AHSSTAFF2025"
           }
+        },
+        {
+          "group": "Management Tools", 
+          "pages": [
+            "staff/admin-tools",
+            "staff/events"
+          ],
+          "auth": {
+            "method": "password",
+            "password": "AHSSTAFF2025"
+          }
+        }
         ]
       }
     ],
@@ -75,7 +83,7 @@
       "anchors": [
         {
           "anchor": "Discord Server",
-          "href": "https://discord.gg/firealarmschool",
+          "href": "https://Discord.gg/firealarm",
           "icon": "discord"
         },
         {
@@ -94,7 +102,7 @@
     "links": [
       {
         "label": "Discord",
-        "href": "https://discord.gg/firealarmschool"
+        "href": "https://Discord.gg/firealarm"
       }
     ],
     "primary": {
@@ -117,7 +125,7 @@
   },
   "footer": {
     "socials": {
-      "discord": "https://discord.gg/firealarmschool",
+      "discord": "https://Discord.gg/firealarm",
       "youtube": "https://youtube.com/@firealarmschool",
       "instagram": "https://instagram.com/firealarmschool"
     }
