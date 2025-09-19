@@ -81,7 +81,7 @@
         {
           "anchor": "Play Game",
           "href": "https://www.roblox.com/games/firealarmschool",
-          "icon": "gamepad-2"
+          "icon": "gamepad"
         }
       ]
     }
@@ -112,7 +112,7 @@
   "footer": {
     "socials": {
       "discord": "https://Discord.gg/firealarm",
-      "youtube": "https://youtube.com/@firealarmschool",
+      "youtube": "https://youtube.com/@AHSfirealarmschool",
       "instagram": "https://instagram.com/firealarmschool"
     }
   }
