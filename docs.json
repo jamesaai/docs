@@ -81,7 +81,7 @@
         },
         {
           "anchor": "Play Game",
-          "href": "https://www.roblox.com/games/firealarmschool",
+          "href": "https://roblox.com/games/72522242437087/Place",
           "icon": "gamepad"
         }
       ]
@@ -101,7 +101,7 @@
     "primary": {
       "type": "button",
       "label": "Play Game",
-      "href": "https://www.roblox.com/games/firealarmschool"
+      "href": "https://roblox.com/games/72522242437087/Place"
     }
   },
   "contextual": {
