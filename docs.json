@@ -107,6 +107,21 @@
   "contextual": {
     "options": []
   },
+  "banners": [
+    {
+      "title": "🚨 Emergency Alert System Active",
+      "content": "Fire Alarm School documentation is your guide to emergency preparedness. Stay informed and stay safe!",
+      "type": "info",
+      "dismissible": true
+    },
+    {
+      "title": "🎮 Join the Game Now!",
+      "content": "Ready to practice emergency procedures? Click here to join Fire Alarm School on Roblox!",
+      "type": "success",
+      "href": "https://roblox.com/games/72522242437087/Place",
+      "dismissible": true
+    }
+  ],
   "chat": {
     "enabled": false
   },
