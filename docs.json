@@ -113,5 +113,23 @@
       "youtube": "https://youtube.com/@firealarmschool",
       "instagram": "https://instagram.com/firealarmschool"
     }
+  },
+  "footerSocials": {
+    "discord": "https://Discord.gg/firealarm",
+    "youtube": "https://youtube.com/@firealarmschool",
+    "instagram": "https://instagram.com/firealarmschool"
+  },
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": false
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true,
+    "raiseIssue": false
+  },
+  "metadata": {
+    "og:site_name": "AHS Documentation",
+    "twitter:site": "@firealarmschool"
   }
 }
