@@ -1,68 +1,71 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Fire Alarm School Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#DC2626",
+    "light": "#EF4444",
+    "dark": "#B91C1C"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Game Guide",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "player/gameplay-tips",
+              "player/school-layout",
+              "player/faq"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Emergency Procedures",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "emergency/fire-alarm",
+              "emergency/lockdown",
+              "emergency/communications",
+              "player/evacuation"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Rules",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "rules/emergency-rules",
+              "rules/roleplay",
+              "rules/conduct",
+              "rules/prohibited"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Player Resources",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "player/gameplay-tips",
+              "player/school-layout",
+              "player/evacuation",
+              "player/faq"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Staff Resources",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Staff Training",
             "pages": [
-              "api-reference/introduction"
+              "staff/training",
+              "staff/emergency-response"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Management Tools",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "staff/admin-tools",
+              "staff/events"
             ]
           }
         ]
@@ -71,19 +74,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Discord Server",
+          "href": "https://discord.gg/firealarmschool",
+          "icon": "discord"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Play Game",
+          "href": "https://www.roblox.com/games/firealarmschool",
+          "icon": "gamepad-2"
         }
       ]
     }
@@ -95,14 +93,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Discord",
+        "href": "https://discord.gg/firealarmschool"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Play Game",
+      "href": "https://www.roblox.com/games/firealarmschool"
     }
   },
   "contextual": {
@@ -119,9 +117,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "discord": "https://discord.gg/firealarmschool",
+      "youtube": "https://youtube.com/@firealarmschool",
+      "instagram": "https://instagram.com/firealarmschool"
     }
   }
 }
