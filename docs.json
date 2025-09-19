@@ -1,76 +1,61 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "dark",
   "name": "AHS | Documentation",
   "colors": {
-    "primary": "#DC2626",
-    "light": "#EF4444",
-    "dark": "#B91C1C"
+    "primary": "#10B981",
+    "light": "#34D399", 
+    "dark": "#059669",
+    "background": {
+      "light": "#FFFFFF",
+      "dark": "#0F172A"
+    }
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Game Guide",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "index",
-              "player/gameplay-tips",
-              "player/school-layout",
-              "player/faq"
-            ]
-          },
-          {
-            "group": "Emergency Procedures",
-            "pages": [
-              "emergency/fire-alarm",
-              "emergency/lockdown",
-              "emergency/communications",
-              "player/evacuation"
-            ]
-          },
-          {
-            "group": "Rules",
-            "pages": [
-              "rules/emergency-rules",
-              "rules/roleplay",
-              "rules/conduct",
-              "rules/prohibited"
-            ]
-          },
-          {
-            "group": "Player Resources",
-            "pages": [
-              "player/gameplay-tips",
-              "player/school-layout",
-              "player/evacuation",
-              "player/faq"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Staff Resources",
-        "groups": [
-        {
-          "group": "Staff Training",
-          "pages": [
-            "staff/training",
-            "staff/emergency-response"
-          ]
-        },
-        {
-          "group": "Management Tools", 
-          "pages": [
-            "staff/admin-tools",
-            "staff/events"
-          ]
-        }
-        ]
-      }
-    ],
+  "navigation": [
+    {
+      "group": "Getting started",
+      "pages": [
+        "index",
+        "quickstart",
+        "player/gameplay-tips"
+      ]
+    },
+    {
+      "group": "Player Guide", 
+      "pages": [
+        "player/school-layout",
+        "player/evacuation",
+        "player/faq"
+      ]
+    },
+    {
+      "group": "Emergency Procedures",
+      "pages": [
+        "emergency/fire-alarm",
+        "emergency/lockdown", 
+        "emergency/communications"
+      ]
+    },
+    {
+      "group": "Rules & Guidelines",
+      "pages": [
+        "rules/emergency-rules",
+        "rules/roleplay",
+        "rules/conduct",
+        "rules/prohibited"
+      ]
+    },
+    {
+      "group": "Staff Resources",
+      "pages": [
+        "staff/training",
+        "staff/emergency-response",
+        "staff/admin-tools",
+        "staff/events"
+      ]
+    }
+  ],
     "global": {
       "anchors": [
         {
@@ -103,8 +88,21 @@
       "href": "https://www.roblox.com/games/firealarmschool"
     }
   },
+  "sidebar": {
+    "defaultCollapsed": false,
+    "navigation": "top"
+  },
+  "topbarLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/firealarmschool"
+    }
+  ],
   "contextual": {
     "options": []
+  },
+  "search": {
+    "prompt": "Search documentation..."
   },
   "chat": {
     "enabled": false
