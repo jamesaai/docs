@@ -14,16 +14,17 @@
         "tab": "Game Guide",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "🚀 Getting Started",
             "pages": [
               "index",
               "player/gameplay-tips",
-              "player/school-layout",
-              "player/faq"
+              "player/school-layout", 
+              "player/faq",
+              "security"
             ]
           },
           {
-            "group": "Emergency Procedures",
+            "group": "🚨 Emergency Procedures",
             "pages": [
               "emergency/fire-alarm",
               "emergency/lockdown",
@@ -32,7 +33,7 @@
             ]
           },
           {
-            "group": "Rules",
+            "group": "⚖️ Rules",
             "pages": [
               "rules/emergency-rules",
               "rules/roleplay",
@@ -41,7 +42,7 @@
             ]
           },
           {
-            "group": "Player Resources",
+            "group": "🎮 Player Resources",
             "pages": [
               "player/gameplay-tips",
               "player/school-layout",
@@ -55,14 +56,14 @@
         "tab": "Staff Resources",
         "groups": [
         {
-          "group": "Staff Training",
+          "group": "🎯 Staff Training",
           "pages": [
             "staff/training",
             "staff/emergency-response"
           ]
         },
         {
-          "group": "Management Tools", 
+          "group": "🔧 Management Tools", 
           "pages": [
             "staff/admin-tools",
             "staff/events"
@@ -108,6 +109,23 @@
   },
   "chat": {
     "enabled": false
+  },
+  "security": {
+    "contentSecurityPolicy": {
+      "defaultSrc": ["'self'"],
+      "scriptSrc": ["'self'", "'unsafe-inline'", "https://mintlify.com"],
+      "styleSrc": ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+      "fontSrc": ["'self'", "https://fonts.gstatic.com"],
+      "imgSrc": ["'self'", "data:", "https:"],
+      "connectSrc": ["'self'", "https://api.firealarmschool.com"],
+      "frameSrc": ["https://www.youtube.com"]
+    },
+    "headers": {
+      "X-Frame-Options": "DENY",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+    }
   },
   "footer": {
     "socials": {
