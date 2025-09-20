@@ -61,9 +61,16 @@ description: "Security best practices and guidelines for Fire Alarm School"
 ## 👨‍💻 Technical Security
 
 ### Staff Access Controls
-<Warning>
-  **Staff Authentication:** Administrative sections use secure server-side authentication. The previous client-side password system has been removed for security reasons.
-</Warning>
+<Success>
+  **Secure Discord Authentication:** Our staff authentication system uses Discord OAuth 2.0 with role-based access control. Only verified staff members with appropriate Discord roles can access administrative resources.
+</Success>
+
+#### Authentication Features
+- **Discord OAuth 2.0:** Industry-standard authentication protocol
+- **Role-Based Access:** Different permission levels for moderators, admins, and owners
+- **Session Management:** Secure JWT tokens with automatic expiration
+- **Audit Logging:** All staff actions are logged for accountability
+- **Multi-Factor Security:** Discord account + server membership + role verification
 
 ### API Security
 - **HTTPS Only:** All API endpoints use encrypted connections
