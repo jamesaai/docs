@@ -12,6 +12,7 @@
     "tabs": [
       {
         "tab": "Game Guide",
+        "icon": "gamepad",
         "groups": [
           {
             "group": "🚀 Getting Started",
@@ -19,8 +20,7 @@
               "index",
               "player/gameplay-tips",
               "player/school-layout", 
-              "player/faq",
-              "security"
+              "player/faq"
             ]
           },
           {
@@ -54,6 +54,7 @@
       },
       {
         "tab": "Staff Resources",
+        "icon": "users",
         "groups": [
         {
           "group": "🎯 Staff Training",
@@ -109,8 +110,9 @@
   },
   "banners": [
     {
-      "title": "🚨 Emergency Alert System Active",
-      "content": "Fire Alarm School documentation is your guide to emergency preparedness. Stay informed and stay safe!",
+      "image": "https://i.ibb.co/20wgJvVM/72522242437087-thumbnail.jpg",
+      "title": "🚨 Welcome to Fire Alarm School",
+      "content": "Your comprehensive guide to emergency preparedness and school safety procedures.",
       "type": "info",
       "dismissible": true
     },
