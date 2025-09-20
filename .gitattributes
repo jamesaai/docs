@@ -1,0 +1,41 @@
+# Security: Ensure sensitive files are never committed
+*.key filter=git-crypt diff=git-crypt merge=git-crypt
+*.pem filter=git-crypt diff=git-crypt merge=git-crypt
+*.p12 filter=git-crypt diff=git-crypt merge=git-crypt
+*.pfx filter=git-crypt diff=git-crypt merge=git-crypt
+*.crt filter=git-crypt diff=git-crypt merge=git-crypt
+secrets/** filter=git-crypt diff=git-crypt merge=git-crypt
+private/** filter=git-crypt diff=git-crypt merge=git-crypt
+.env* filter=git-crypt diff=git-crypt merge=git-crypt
+
+# Ensure consistent line endings
+* text=auto
+*.md text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.jsx text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.svg text eol=lf
+*.mdx text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+*.rar binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
