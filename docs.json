@@ -12,6 +12,7 @@
     "tabs": [
       {
         "tab": "Game Guide",
+        "icon": "gamepad",
         "groups": [
           {
             "group": "🚀 Getting Started",
@@ -19,8 +20,7 @@
               "index",
               "player/gameplay-tips",
               "player/school-layout", 
-              "player/faq",
-              "security"
+              "player/faq"
             ]
           },
           {
@@ -54,6 +54,7 @@
       },
       {
         "tab": "Staff Resources",
+        "icon": "users",
         "groups": [
         {
           "group": "🎯 Staff Training",
@@ -109,8 +110,9 @@
   },
   "banners": [
     {
-      "title": "🚨 Emergency Alert System Active",
-      "content": "Fire Alarm School documentation is your guide to emergency preparedness. Stay informed and stay safe!",
+      "image": "https://i.ibb.co/20wgJvVM/72522242437087-thumbnail.jpg",
+      "title": "🚨 Welcome to Fire Alarm School",
+      "content": "Your comprehensive guide to emergency preparedness and school safety procedures.",
       "type": "info",
       "dismissible": true
     },
@@ -128,18 +130,72 @@
   "security": {
     "contentSecurityPolicy": {
       "defaultSrc": ["'self'"],
-      "scriptSrc": ["'self'", "'unsafe-inline'", "https://mintlify.com"],
-      "styleSrc": ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-      "fontSrc": ["'self'", "https://fonts.gstatic.com"],
-      "imgSrc": ["'self'", "data:", "https:"],
-      "connectSrc": ["'self'", "https://api.firealarmschool.com"],
-      "frameSrc": ["https://www.youtube.com"]
+      "scriptSrc": [
+        "'self'",
+        "'strict-dynamic'",
+        "https://mintlify.com",
+        "https://cdn.mintlify.com",
+        "https://www.googletagmanager.com",
+        "https://www.google-analytics.com"
+      ],
+      "styleSrc": [
+        "'self'",
+        "'unsafe-inline'",
+        "https://fonts.googleapis.com",
+        "https://cdn.mintlify.com"
+      ],
+      "fontSrc": [
+        "'self'",
+        "https://fonts.gstatic.com",
+        "data:"
+      ],
+      "imgSrc": [
+        "'self'",
+        "data:",
+        "https:",
+        "blob:"
+      ],
+      "connectSrc": [
+        "'self'",
+        "https://api.firealarmschool.com",
+        "https://www.google-analytics.com",
+        "https://analytics.google.com",
+        "wss://*.mintlify.com"
+      ],
+      "frameSrc": [
+        "https://www.youtube.com",
+        "https://player.vimeo.com"
+      ],
+      "mediaSrc": ["'self'", "https:"],
+      "objectSrc": ["'none'"],
+      "baseUri": ["'self'"],
+      "formAction": ["'self'"],
+      "frameAncestors": ["'none'"],
+      "manifestSrc": ["'self'"],
+      "workerSrc": ["'self'", "blob:"]
     },
     "headers": {
       "X-Frame-Options": "DENY",
       "X-Content-Type-Options": "nosniff",
+      "X-XSS-Protection": "1; mode=block",
       "Referrer-Policy": "strict-origin-when-cross-origin",
-      "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+      "Permissions-Policy": "geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "Content-Security-Policy-Report-Only": "default-src 'self'; report-uri /csp-report",
+      "Cross-Origin-Embedder-Policy": "require-corp",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Cross-Origin-Resource-Policy": "cross-origin",
+      "Cache-Control": "public, max-age=31536000, immutable",
+      "X-DNS-Prefetch-Control": "off",
+      "X-Download-Options": "noopen",
+      "X-Permitted-Cross-Domain-Policies": "none"
+    },
+    "rateLimit": {
+      "windowMs": 900000,
+      "max": 100,
+      "message": "Too many requests from this IP, please try again later.",
+      "standardHeaders": true,
+      "legacyHeaders": false
     }
   },
   "footer": {

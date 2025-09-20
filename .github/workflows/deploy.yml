@@ -1,0 +1,58 @@
+name: Secure Deploy
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  security-pre-checks:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Verify no secrets in code
+      run: |
+        echo "Checking for secrets before deployment..."
+        if grep -r -i "password\|secret\|key\|token\|api_key" --include="*.mdx" --include="*.json" --include="*.js" --include="*.ts" .; then
+          echo "ERROR: Potential secrets found in code!"
+          exit 1
+        fi
+        echo "No secrets found - proceeding with deployment"
+
+    - name: Validate configuration
+      run: |
+        echo "Validating configuration files..."
+        python3 -m json.tool docs.json > /dev/null
+        echo "Configuration validation passed"
+
+  deploy:
+    needs: security-pre-checks
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+
+    - name: Install dependencies
+      run: npm ci --only=production
+
+    - name: Build documentation
+      run: npm run build
+
+    - name: Deploy to Mintlify
+      env:
+        MINTLIFY_TOKEN: ${{ secrets.MINTLIFY_TOKEN }}
+      run: |
+        echo "Deploying to Mintlify..."
+        # Add your deployment commands here
