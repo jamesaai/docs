@@ -1,121 +1,108 @@
 ---
 title: "Planetary Session Management"
-description: "How to create, configure, and manage sessions in your workspace"
+description: "How to plan, schedule, and manage sessions using the Planetary dashboard"
 ---
 
 # 🪐 Planetary Sessions
 
 <Note>
-**Event Organization:** Sessions are the backbone of community activity, allowing you to schedule one-time or recurring events efficiently.
+**Streamlined HR:** Planetary allows you to manage staff activity, warnings, and sessions all from a single, unified dashboard.
 </Note>
 
 <Tabs>
-  <Tab title="🔭 Overview">
+  <Tab title="📅 Dashboard & Planning">
     <Info>
-    **Definition:** Sessions are distinct events within your community. These can be singular occurrences or repeating schedules.
+    **The Hub:** The Sessions page is your central command for organizing group activities.
     </Info>
 
     <CardGroup cols={2}>
-      <Card title="Training Sessions" icon="chalkboard-teacher">
-        **Skill Development**
-        - Scheduled training times
-        - Automated role assignment
-        - structured curriculum
-        - Attendance tracking
+      <Card title="Calendar View" icon="calendar">
+        **Visual Planning**
+        - View sessions by day (Mon-Sun)
+        - Filter specific event types
+        - Instantly see "No Sessions Scheduled" gaps
+        - Quick access to create `+ New` events
+       
       </Card>
 
-      <Card title="Interview Sessions" icon="user-tie">
-        **Recruitment**
-        - New applicant processing
-        - Staff promotion reviews
-        - One-on-one evaluations
-        - Application processing
+      <Card title="Staff Oversight" icon="users-viewfinder">
+        **Activity Tracking**
+        Monitor staff performance alongside your schedule:
+        - View Hosted Sessions count
+        - Track Sessions Attended
+        - Manage LOAs and Warnings
+        - Search specific staff members
+       
       </Card>
     </CardGroup>
-
-    <AccordionGroup>
-      <Accordion title="Why use Sessions?" icon="question">
-        Sessions streamline the chaos of community management. Instead of manually tracking every event, Planetary Sessions allow you to pre-configure permissions, roles, and times, ensuring every event runs smoothly.
-      </Accordion>
-    </AccordionGroup>
   </Tab>
 
-  <Tab title="⚙️ Creation Steps">
-    <Warning>
-    **Permissions Required:** You must have the **Workspace Admin** permission to create or modify sessions.
-    </Warning>
-
+  <Tab title="⚙️ Session Setup">
     <Steps>
-      <Step title="Access Settings">
-        Navigate to your dashboard and go to **Workspace Settings > Sessions**.
+      <Step title="Basic Information">
+        **Define the Core Details**
+        Start by entering the essential info for your activity:
+        * **Session Name:** Give it a clear title (e.g., "Weekly Training Session").
+        * **Description:** Explain what will happen or special instructions.
+        * **Session Type:** Select the category (e.g., Training).
+        * **Game:** Choose the specific place (e.g., TESTING PLACE) where it occurs.
       </Step>
-      <Step title="Initiate Creation">
-        Click the **Add Session** button located on the top right. A configuration popup will appear.
-      </Step>
-      <Step title="Configure Details">
-        Fill in the required fields (Name, Description, Time) and select which Role Groups are visible.
-      </Step>
-      <Step title="Finalize">
-        Save your session. It is now ready to be hosted or scheduled.
+      
+      <Step title="Scheduling Options">
+        **Timing & Frequency**
+        Configure when the session happens:
+        * **Unscheduled:** Toggle this for one-time, immediate sessions.
+        * **Scheduled:** Toggle this for recurring events.
+        * **Frequency:** Choose Weekly, Bi-weekly, or Monthly.
+        * **Repeating Days:** Select specific days (e.g., Mon, Wed, Fri).
       </Step>
     </Steps>
   </Tab>
 
-  <Tab title="🛠️ Advanced Config">
+  <Tab title="🛠️ Advanced Configuration">
     <CardGroup cols={2}>
-      <Card title="Role Groups" icon="users">
-        **Visibility Control**
-        Select exactly which ranks or role groups can see and join this specific session type.
+      <Card title="Session Slots" icon="user-group">
+        **Role Management**
+        Define who can join and in what capacity.
+        * **Host (Primary):** The main leader (1 slot, cannot be changed).
+        * **Add Slot:** create additional roles like "Co-Host" or specific ranks.
+        * **Limits:** Set specific available slot numbers for each role.
       </Card>
 
-      <Card title="Co-Host Settings" icon="shield-halved">
-        **Permission Toggles**
-        Manage who can assist the host during the session execution.
+      <Card title="Automated Statuses" icon="clock">
+        **Timed Updates**
+        Create status updates that trigger automatically during the session.
+        * **Status Name:** The message displayed (e.g., "New status").
+        * **Time After:** Set the delay in minutes (e.g., 0 minutes for start).
       </Card>
     </CardGroup>
 
     <CodeGroup>
-      ```text Co-Host Enabled
-      [✓] Allow Co-Hosts
-      Result: Staff with permission can 
-      join as support/assistants.
-      ```
-
-      ```text Co-Host Disabled
-      [X] Disable Co-Host
-      Result: Only the main host can 
-      manage the session controls.
+      ```text Example Status Flow
+      0 Minutes: "Session Starting"
+      15 Minutes: "Locking Server"
+      45 Minutes: "Session Concluded"
       ```
     </CodeGroup>
-
-    <Tip>
-    **Pro Tip:** Enable the **Disable Co-Host** toggle on the right side of the page if you want strictly one person managing the event flow.
-    </Tip>
   </Tab>
 </Tabs>
 
 ---
 
-## 🚀 Session Best Practices
+## 🚀 Management Tips
 
 <Steps>
-  <Step title="Clear Naming">
-    Use distinct names like "Basic Training - 5 PM" rather than just "Training" to avoid confusion.
+  <Step title="Utilize Views">
+    Use the sidebar filters to switch between **Sessions**, **Top Activity**, **LOA**, and **On Track** views to get a holistic picture of your team's health.
   </Step>
-  <Step title="Role Discipline">
-    Ensure you only enable role groups that are actually required for the session to prevent overcrowding.
+  <Step title="Consistent Scheduling">
+    For regular events, use the **Scheduled session** toggle with a **Weekly** frequency to automate your calendar and save time.
   </Step>
-  <Step title="Regular Audits">
-    Review your Session Settings monthly to remove outdated event types or update descriptions.
+  <Step title="Clear Role Definitions">
+    When adding **Session Slots**, clearly label roles like "Co-Host" to ensure staff members know their responsibilities upon joining.
   </Step>
 </Steps>
 
 <Tip>
-**Automation:** Properly configured sessions work seamlessly with Discord webhooks to announce events automatically!
+**Pro Tip:** Use the **Status** feature to automate your workflow. By setting a status to activate at "0 minutes," you ensure the session starts with the correct label immediately.
 </Tip>
-
----
-
-<Card title="📊 View Analytics" icon="chart-mixed" color="blue" horizontal href="/workspace/analytics">
-Track attendance and performance statistics for your sessions
-</Card>
